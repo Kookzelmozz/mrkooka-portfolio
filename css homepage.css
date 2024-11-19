@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #000; /* Black background */
+  line-height: 1.6;
+}
+
+a {
+  color: #ff69b4; /* Pink */
+  text-decoration: none;
+}
+
+/* Header Section */
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('header-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.brand-name {
+  font-size: 3rem;
+  color: #ff69b4; /* Pink */
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.btn-scroll {
+  background-color: #ff69b4; /* Pink */
+  color: #000; /* Black text on button */
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-scroll:hover {
+  background-color: #e758a3; /* Slightly darker pink */
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 1.5rem;
+  background-color: #111; /* Slightly lighter black for section */
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #ff69b4; /* Pink */
+  margin-bottom: 1.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background: #222; /* Dark grey */
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  background: #333; /* Slightly lighter grey */
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  color: #ff69b4; /* Pink */
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 1.5rem;
+  background-color: #000; /* Black */
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #ff69b4; /* Pink */
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #222; /* Dark grey */
+  color: #fff; /* White text */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa; /* Light grey placeholder */
+}
+
+.btn-submit {
+  background-color: #ff69b4; /* Pink */
+  color: #000; /* Black text */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e758a3; /* Slightly darker pink */
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  background-color: #111; /* Slightly lighter black */
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999; /* Light grey text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 2.5rem;
+  }
+
+  .btn-scroll {
+    font-size: 0.9rem;
+  }
+}
